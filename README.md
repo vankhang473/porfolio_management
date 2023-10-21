@@ -1,6 +1,6 @@
 # porfolio_management
 
-A new Flutter project.
+A program that allows users to log in and establish connections with other employers. In addition to viewing others' skills, they can share their own.
 
 ## Getting Started
 
