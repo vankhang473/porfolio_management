@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio_management/Common/colort_utils.dart';
-import 'package:porfolio_management/Common/router.dart';
+import 'package:porfolio_management/Features/ExampleFeature/Screen/Login.dart';
+import 'package:porfolio_management/router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:porfolio_management/Common/string_utils.dart';
 
@@ -9,7 +10,6 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  static const String routeName = '/my-app';
   const MyApp({Key? key}) : super(key: key);
 
   @override
@@ -33,7 +33,7 @@ class AppState extends State<MyApp> {
         Locale('en'),
         Locale('vi'),
       ],
-      locale: const Locale('vi'),
+      locale: const Locale('en'),
       debugShowCheckedModeBanner: false,
       title: AppString.appTitle,
       theme: ThemeData(
@@ -43,8 +43,8 @@ class AppState extends State<MyApp> {
         ),
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: Container(),
-      //initialRoute: '/login-screen',
+      home: const LoginPage(),
+      initialRoute: '/Test-route',
     );
   }
 }
